@@ -1,4 +1,8 @@
-# Log.io server docker image
+# What is "log.io"?
+
+Log.io is Real-time log monitoring in your browser. Read more here: (http://logio.org/)[http://logio.org/].
+
+# How to use this image
 
 ## Running
 
@@ -6,8 +10,7 @@
 docker run -d -p 28777:28777 -p 28778:28778 'muchweb/log.io-arch'
 ```
 
-## Building
+This image includes:
 
-```bash
-docker build -t 'muchweb/log.io-arch' .
-```
+- `EXPOSE 28777` — log listening port
+- `EXPOSE 28778` — web admin server port
